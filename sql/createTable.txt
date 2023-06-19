@@ -1,0 +1,14 @@
+CREATE DATABASE 'employeeDb';
+USE employeeDb;
+
+create table employees (
+	id  int(3) NOT NULL AUTO_INCREMENT,
+	fullName varchar(120) NOT NULL,
+	birthDay varchar(100) NOT NULL,
+	address varchar(200),
+    position varchar(200),
+    department varchar(200),
+	PRIMARY KEY (id)
+);
+
+INSERT INTO `employees`( `fullName`, `birthDay`, `address`, `position`, `department`) VALUES ('Dang ngonc ha','12/05/1998','Ha noi','Nhan vien','Maketting')
